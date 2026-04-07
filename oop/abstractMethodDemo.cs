@@ -2,14 +2,11 @@ using System;
 
 abstract class test1
 {
-    public int add (int i, int j)
+    public int add(int i, int j)
     {
         return i + j;
     }
-    public abstract int mul (int i, int j)
-    {
-        return i * j;
-            }
+    public abstract int mul(int i, int j);
 }
 
 class test2 : test1
