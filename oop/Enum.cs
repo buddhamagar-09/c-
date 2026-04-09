@@ -4,19 +4,19 @@ using System;
 
 enum Days
 {
-    sunday,monday,tuesday,wednesday,thursday,friday,saturday
+    sunday, monday, tuesday, wednesday, thursday, friday, saturday
 }
 
 class Program
 {
-    static void Main(String[]args)
+    static void Main(String[] args)
     {
-       Console.WriteLine("The value of Sunday in " +"enum is" + (int)Days.sunday);
-       Console.WriteLine("The value of Monday in " +"enum is" + (int)Days.monday);
-       Console.WriteLine("The value of Tuesday in " +"enum is" + (int)Days.tuesday);
-         Console.WriteLine("The value of Wednesday in " +"enum is" + (int)Days.wednesday);
-          Console.WriteLine("The value of Thursday in " +"enum is" + (int)Days.thursday);
-           Console.WriteLine("The value of Friday in " +"enum is" + (int)Days.friday);
-            Console.WriteLine("The value of Saturday in " +"enum is" + (int)Days.saturday);
-}
+        Console.WriteLine("The value of Sunday in " + "enum is" + (int)Days.sunday);
+        Console.WriteLine("The value of Monday in " + "enum is" + (int)Days.monday);
+        Console.WriteLine("The value of Tuesday in " + "enum is" + (int)Days.tuesday);
+        Console.WriteLine("The value of Wednesday in " + "enum is" + (int)Days.wednesday);
+        Console.WriteLine("The value of Thursday in " + "enum is" + (int)Days.thursday);
+        Console.WriteLine("The value of Friday in " + "enum is" + (int)Days.friday);
+        Console.WriteLine("The value of Saturday in " + "enum is" + (int)Days.saturday);
+    }
 }
