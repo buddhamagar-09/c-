@@ -1,6 +1,8 @@
-// Queue members
+// Stack members
 // pop()
 // push()
+//clear()
+//contains()
 
 using System.Collections.Generic;
 
