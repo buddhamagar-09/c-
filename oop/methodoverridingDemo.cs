@@ -20,7 +20,9 @@ class Program
 {
     public static void Main(String[] args)
     {
-        Child c = new Child();
-        c.message();
+        // Child c = new Child();
+        // c.message();
+        Parent p = new Child();
+        p.message();
     }
 }
