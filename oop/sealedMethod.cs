@@ -24,3 +24,5 @@ class Program
         s.test();
     }
 }
+
+// sealed keyword is used to prevent a class from being inherited or a method from being overridden. In the above example, we have a base class called Base which has a virtual method test(). The derived class subclass overrides the test() method and marks it as sealed. This means that no further derived class can override the test() method.
