@@ -11,6 +11,6 @@ class Test
     }
     static void Main()
     {
-        Counter();
+        Counter(7);
     }
 }
