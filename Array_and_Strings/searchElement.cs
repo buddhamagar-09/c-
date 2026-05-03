@@ -6,10 +6,10 @@ class Program
 {
     static void Main(String[] args)
     {
-        Program p = new Program();
-        p.Search_Element();
+        // Program p = new Program();
+        Search_Element();
     }
-    public void Search_Element()
+    public static void Search_Element()
     {
         int[] arr;
         Console.WriteLine("Enter the size of the Array: ");
