@@ -2,7 +2,6 @@ using System;
 
 class oddevendemo
 {
-    int n;
     public void number_Check(int n)
     {
         if (n % 2 == 0)
