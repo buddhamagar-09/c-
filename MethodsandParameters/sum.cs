@@ -3,7 +3,6 @@ using System;
 
 class SumDemo
 {
-    int a, b;
     public static int FindSum(int a, int b)
     {
         int sum = a + b;
