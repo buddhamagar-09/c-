@@ -1,43 +1,41 @@
 using System;
-using System.Runtime.Intrinsics.Arm;
 
-class Complex
+class Number
 {
-    private int x;
-    private int y;
-    public Complex()
-    {
-        
-    }
+    private int n1;
+    private int n2;
 
-    public Complex(int i, int j)
+    public Number()
     {
-        x = i;
-        y = j;
+
+    }
+    public Number(int i, int j)
+    {
+        n1 = i;
+        n2 = j;
     }
 
     public void show()
     {
-        Console.WriteLine("{0},{1}", x, y);
+        Console.WriteLine($"{n1},{n2}");
     }
 
-    public static Complex operator +(Complex c1, Complex c2)
+    public static Number operator -(Number num1, Number num2)
     {
-        Complex temp = new Complex();
-        temp.x = c1.x + c2.x;
-        temp.y = c1.y + c2.y;
+        Number temp = new Number();
+        temp.n1 = num1.n1 - num2.n1;
+        temp.n2 = num1.n2 - num2.n2;
         return temp;
     }
-}
 
-class MyClass
-{
-    public static void Main()
+    static void Main()
     {
-        Complex c1 = new Complex(20, 30);
-        c1.show();
-        Complex c2 = new Complex(30, 20);
-       Complex c3 = c1 + c2;
-        c3.show();
+        Number num1 = new Number(100,89);
+        num1.show();
+        Number num2 = new Number(60, 50);
+        num2.show();
+        Number num3 = num1 - num2;
+        num3.show();
+
     }
 }
