@@ -22,21 +22,21 @@ class Test
     }
 }
 
-class Program
-{
-    static void Main(String[] args)
-    {
-        int a = 20;
-        int b = 0;
-        int res;
-        try
-        {
-            res = a / b;
-        }
-        catch (ArithmeticException ae)
-        {
-            Console.WriteLine(ae);
-            throw;
-        }
-    }
-}
+// class Program
+// {
+//     static void Main(String[] args)
+//     {
+//         int a = 20;
+//         int b = 0;
+//         int res;
+//         try
+//         {
+//             res = a / b;
+//         }
+//         catch (ArithmeticException ae)
+//         {
+//             Console.WriteLine(ae);
+//             throw;
+//         }
+//     }
+// }
