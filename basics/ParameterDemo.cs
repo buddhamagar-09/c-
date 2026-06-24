@@ -1,4 +1,5 @@
 using System;
+using System.Numerics;
 
 // pass by reference
 // class Program
@@ -36,20 +37,23 @@ using System;
 
 // params modifier = allows you to pass many arguments in a single varibale
 
-class Test
+
+class Program
 {
-    static int Sum(params int[] s)
+
+    public void Sum(params int [] numbers)
     {
-        int sum = 0;
-        for(int i = 0; i<s.Length; i++)
+        int total = 0;
+
+        foreach(int n in numbers)
         {
-            sum += s[i];
+            total += n;
         }
-        return sum;
+        Console.WriteLine($"The sum of numbers is {total}");
     }
     static void Main()
     {
-        int total = Sum(1,2,3,4,5,6,7,8,9,10);
-        Console.WriteLine(total);
+      Program p = new Program();
+      p.Sum(1,2,3,4,5,6,7,8,9);
     }
 }
