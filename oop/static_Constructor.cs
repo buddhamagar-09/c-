@@ -1,24 +1,32 @@
+
 using System;
 
-class User
+class College
 {
-    static User()
+    public static String name;
+    public static String address;
+    static College()
     {
-        Console.WriteLine("This is a static Constructor.");
+        name = "Lumbini ICT Campus";
+        address = " Gaindakot - 4";
+        Console.WriteLine("Static Constructor executed."); 
     }
-    public User()
-    {
-        Console.WriteLine("I am a default Constructor.");
-    }
-}
-class Program
-{
-    static void Main(String[]args)
-    {
-        User u1 = new User();
-        User u2 = new User();
-        Console.WriteLine("Press Enter to Exit.");
-        Console.ReadLine();
 
+    void display()
+    {
+        Console.WriteLine($"{name}:{address}");
+    }
+
+    static void Main()
+    {
+        College c = new College();
+        College c1 = new College();
+        c.display();
+        c1.display();
     }
 }
+
+
+//static constructor is called only once when the class is loaded into memory.
+//  It is used to initialize static members of the class.
+//  It cannot be called directly and does not take any parameters.
