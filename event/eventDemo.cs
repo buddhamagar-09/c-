@@ -21,9 +21,9 @@ class Program
 
     static void Main(String[] args)
     {
-        add += new DelEventHandler(Australia);
-        add += new DelEventHandler(Nepal);
-        add += new DelEventHandler(Japan);
+        add += Australia;
+        add += Nepal;
+        add += Japan;
 
         add.Invoke();
     }
