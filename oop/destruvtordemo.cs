@@ -17,9 +17,9 @@ class Program
 {
     static void Main(String[] args)
     {
-        {
-            ConDes cd = new ConDes("This is a constructor.");
-        }
+
+        ConDes cd = new ConDes("This is a constructor.");
+
         GC.Collect();
         GC.WaitForPendingFinalizers();
     }

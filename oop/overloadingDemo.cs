@@ -1,41 +1,33 @@
 using System;
 
-class Number
+class Program
 {
-    private int n1;
-    private int n2;
+    private int Num1{get;}
+    private int Num2{get;}
 
-    public Number()
+    public Program(int a, int b)
     {
-
-    }
-    public Number(int i, int j)
-    {
-        n1 = i;
-        n2 = j;
+        Num1 =a;
+        Num2 = b;
     }
 
-    public void show()
+    public static Program operator +(Program P1, Program p2)
     {
-        Console.WriteLine($"{n1},{n2}");
+        return new Program(P1.Num1 + p2.Num1, P1.Num2 + p2.Num2);
     }
 
-    public static Number operator -(Number num1, Number num2)
+    public static Program operator -(Program p1, Program p2)
     {
-        Number temp = new Number();
-        temp.n1 = num1.n1 - num2.n1;
-        temp.n2 = num1.n2 - num2.n2;
-        return temp;
+        return new Program(p1.Num1 - p2.Num1, p1.Num2 - p2.Num2);
     }
 
     static void Main()
     {
-        Number num1 = new Number(100,89);
-        num1.show();
-        Number num2 = new Number(60, 50);
-        num2.show();
-        Number num3 = num1 - num2;
-        num3.show();
-
+        Program p1 = new Program(10,10);
+        Program p2 = new Program(20,20);
+        Program p3 = p1 + p2;
+        Program p4 = p1 - p2;
+        Console.WriteLine($"{p3.Num1} and {p3.Num2}");
+        Console.WriteLine($"{p4.Num1} and {p4.Num2}");
     }
 }

@@ -12,7 +12,7 @@ static class Demo
     }
     static void Main(String[] args)
     {
-        Demo.display_details();
+        display_details();
         Console.WriteLine("Name: " + Demo.fname);
         Console.WriteLine("Position: " + Demo.Positiotn);
     }
