@@ -33,19 +33,21 @@ class LingTest
             new student(2,"Pawan","KTM"),
             new student(3,"Sagar","chtwn"),
             new student(4,"Sushant","butwal"),
+            new student(5,"sexy","butwal"),
+            new student(6,"mesy","KTM"),
         };
 
-        var grpresult = mylist.GroupBy(s => s.address);
-       
-        foreach (var result in grpresult)
+        var result = mylist.GroupBy(s => s.address);
+        Console.WriteLine("Displaying by Group:");
+
+        foreach(var group in result)
         {
-            Console.WriteLine("Group Key: " + result.Key);
-            Console.WriteLine("Sid\tName\tAddress");
-            foreach(var res in result)
+            Console.WriteLine("Department" + group.Key);
+
+            foreach(var res in group)
             {
-                Console.WriteLine(res.sid + "\t" + res.name + "\t" + res.address);
+                Console.WriteLine($"Id:{res.sid} \n Name:{res.name} \n Address:{res.address}");
             }
-        }
-        Console.ReadLine();
+        }      
     }
 }

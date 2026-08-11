@@ -35,6 +35,8 @@ class LingTest
             new student(4,"Sushant","butwal"),
         };
 
+        
+
         var result = mylist.Where(s => s.address.Equals("pkr") && s.sid.Equals(1));
         Console.WriteLine("Sid\tName\tAddress");
         foreach (var res in result)
