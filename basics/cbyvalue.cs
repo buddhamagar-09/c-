@@ -3,9 +3,9 @@ using System;
 
 class Demo
 {
-    public void changeValue(int x)
+    public void changeValue(int a)
     {
-        x = 100;
+       int x = 100 + a;
         Console.WriteLine("The value of x is: "+ x);
     }
     static void Main(String[] args)

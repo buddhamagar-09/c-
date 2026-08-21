@@ -10,6 +10,8 @@ namespace first
     }
 }
 
+
+
 namespace second
 {
     using first;
@@ -22,6 +24,8 @@ namespace second
         }
     }
 }
+
+
 namespace third
 {
     using second;

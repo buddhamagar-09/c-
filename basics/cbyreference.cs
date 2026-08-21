@@ -4,7 +4,7 @@ class Demo
 {
     static void ChangeValue(ref int x)
     {
-        x = 100;
+        x = 100 ;
         Console.WriteLine("Inside the method : " + x);
     }
 

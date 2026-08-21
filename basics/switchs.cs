@@ -6,7 +6,7 @@ class Program
 {
     static void Run()
     {
-        is_running = true;
+        bool is_running = true;
         while (is_running == true)
         {
             char grade;
@@ -40,13 +40,14 @@ class Program
             {
                 is_running = false;
                 Console.WriteLine("Thank You for your time.");
-                exit();
+            
             }
         }
 
     }
     static void Main()
     {
+        Run();
         
     }
 }

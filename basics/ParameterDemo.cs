@@ -2,20 +2,20 @@ using System;
 using System.Numerics;
 
 // pass by reference
-// class Program
-// {
-//     static void Food(ref int p)
-//     {
-//         p += 1;
-//         Console.WriteLine(p);
-//     }
-//     static void Main()
-//     {
-//         int x = 8;
-//         Food(ref x);
-//         Console.WriteLine(x);
-//     }
-// }
+class Program
+{
+    static void Food(ref int p)
+    {
+        p  = 100;
+        Console.WriteLine(p);
+    }
+    static void Main()
+    {
+        int x = 8;
+        Food(ref x);
+        Console.WriteLine(x);
+    }
+}
 
 
 // out modifier
@@ -38,22 +38,22 @@ using System.Numerics;
 // params modifier = allows you to pass many arguments in a single varibale
 
 
-class Program
-{
+// class Program
+// {
 
-    public void Sum(params int [] numbers)
-    {
-        int total = 0;
+//     public void Sum(params int [] numbers)
+//     {
+//         int total = 0;
 
-        foreach(int n in numbers)
-        {
-            total += n;
-        }
-        Console.WriteLine($"The sum of numbers is {total}");
-    }
-    static void Main()
-    {
-      Program p = new Program();
-      p.Sum(1,2,3,4,5,6,7,8,9);
-    }
-}
+//         foreach(int n in numbers)
+//         {
+//             total += n;
+//         }
+//         Console.WriteLine($"The sum of numbers is {total}");
+//     }
+//     static void Main()
+//     {
+//       Program p = new Program();
+//       p.Sum(1,2,3,4,5,6,7,8,9);
+//     }
+// }
