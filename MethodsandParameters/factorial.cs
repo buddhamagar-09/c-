@@ -4,7 +4,6 @@ using System;
 
 class Factorial
 {
-    int number;
     public static int Find_Fact(int number)
     {
         if (number == 0 || number == 1)
