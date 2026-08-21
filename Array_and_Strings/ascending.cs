@@ -9,7 +9,7 @@ class Program
         Program p = new Program();
         p.Ascending_Demo();
     }
-    public void Ascending_Demo()
+    public  void Ascending_Demo()
     {
         int[] arr;
         int temp;
